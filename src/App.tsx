@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { PieChart, LineChart, Search, BookOpen, Gamepad2, MessageSquare, X, Send } from 'lucide-react';
+import { PieChart, LineChart, Search, BookOpen, Gamepad2, MessageSquare, X, Send, Heart } from 'lucide-react';
 
 interface AppCard {
   title: string;
@@ -180,13 +180,33 @@ function App() {
           </div>
         </section>
 
-        <footer className="mt-16 sm:mt-20 text-center text-gray-400 border-t border-gray-800 pt-8 pb-4">
-          <p className="text-sm mb-2">
-            © 2026 FinQube. Empowering investors with intelligent financial tools.
-          </p>
-          <p className="text-xs text-gray-500">
-            Made with love by <span className="text-[#3b82f6]">Devansh</span> and <span className="text-[#3b82f6]">Hamza</span> under the guidance of <span className="text-[#3b82f6]">Dr. Gayathri M</span>
-          </p>
+        <footer className="mt-16 sm:mt-20 border-t border-gray-800 pt-12 pb-8">
+          <div className="text-center space-y-6">
+            <div className="flex justify-center mb-4">
+              <p className="text-sm text-gray-400">
+                © 2026 FinQube. Empowering investors with intelligent financial tools.
+              </p>
+            </div>
+
+            <div className="flex items-center justify-center space-x-2">
+              <span className="text-gray-400 text-sm">Made with</span>
+              <Heart className="w-4 h-4 text-red-500 fill-red-500 animate-pulse" />
+              <span className="text-gray-400 text-sm">by</span>
+            </div>
+
+            <div className="space-y-2">
+              <div className="text-center">
+                <p className="inline-block">
+                  <span className="text-[#3b82f6] font-semibold">Devansh</span>
+                  <span className="text-gray-500 mx-2">&</span>
+                  <span className="text-[#3b82f6] font-semibold">Hamza</span>
+                </p>
+              </div>
+              <p className="text-xs text-gray-500">
+                Under the guidance of <span className="text-[#3b82f6] font-semibold">Dr. Gayathri M</span>
+              </p>
+            </div>
+          </div>
         </footer>
       </div>
 
