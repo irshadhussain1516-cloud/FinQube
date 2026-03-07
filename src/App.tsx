@@ -180,9 +180,12 @@ function App() {
           </div>
         </section>
 
-        <footer className="mt-16 sm:mt-20 text-center text-gray-400 border-t border-gray-800 pt-8">
-          <p className="text-sm">
+        <footer className="mt-16 sm:mt-20 text-center text-gray-400 border-t border-gray-800 pt-8 pb-4">
+          <p className="text-sm mb-2">
             © 2026 FinQube. Empowering investors with intelligent financial tools.
+          </p>
+          <p className="text-xs text-gray-500">
+            Made with love by <span className="text-[#3b82f6]">Devansh</span> and <span className="text-[#3b82f6]">Hamza</span> under the guidance of <span className="text-[#3b82f6]">Dr. Gayathri M</span>
           </p>
         </footer>
       </div>
